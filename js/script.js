@@ -19,6 +19,11 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		$('.background').checkImgRatio();
 	});
+
+	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+	 	$('.safari').show();
+	}
+
 });
 
 // ORANGE f48120

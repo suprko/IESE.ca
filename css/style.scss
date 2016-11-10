@@ -59,14 +59,22 @@ html, body {
 	overflow-x: hidden;
 }
 
+html {
+	font-family: monospace;
+}
+
+.safari {
+	display: none;
+}
+
 ///STYLES
 .background {
 	position: fixed;
 
 	left: -1%; top: -1%;
 	z-index: -1;
-	width: 101%;
-	height: 101%;
+	width: 101vw;
+	height: 101vh;
 	opacity: 0.9;
 
 	&.fill-width img, img {
@@ -83,8 +91,8 @@ html, body {
 .container-full {
 	z-index: 1;
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	padding-bottom: 30vh;
+
 	overflow: hidden;
 }
 
@@ -114,7 +122,7 @@ html, body {
 #links {
 	position: relative;
 	padding-top: 5%;
-	padding-bottom: 25%;
+	padding-bottom: 20%;
 	text-align: center;
 
 	.poster-links {
@@ -132,7 +140,6 @@ html, body {
 			border: 1px solid black;
 			color: black;
 			text-decoration: none;
-			font-family: monospace;
 			font-size: 130%;
 			transition: all 100ms;
 		}
@@ -143,7 +150,7 @@ html, body {
 
 	img {
 		width: 100%;
-		border: 1px solid black;
+		box-shadow: 0 0 15px -5px #000;
 	}
 
 	a {
