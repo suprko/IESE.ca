@@ -20,3 +20,8 @@ $(document).ready(function() {
 		$('.background').checkImgRatio();
 	});
 });
+
+// ORANGE f48120
+// RED ec1c24
+// YELLOW ffcc00
+// BLUE 66cccc
